@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration form</title>
+    <link rel="stylesheet" href="/home/a3-403a-10/Desktop/T400050836/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark text-white bg-dark">
+            <a class="navbar-brand mx-auto">Event Registration form</a>
+        </nav>
+        <div class="row">
+            <div class="col-md-6 mx-auto text-center">
+                <h2>USER REGISTRATION FORM</h2>
+                <form class="needs validation mt-4" novalidate>
+                    <div class="form-floating mt-4">
+                        <input type="text" required placeholder="ENTER NAME" pattern="[A-Za-z ]+"class="form-control border-black rounded-3">
+                        <label>Name</label>
+                        <div class="invalid-feedback">Enter a valid name</div>
+                    </div>
+                    <div class="form-floating mt-4">
+                        <input type="email" placeholder="ENTER EMAIL" required class="form-control border-black rounded-3" required>
+                        <label>Email</label>
+                        <div class="invalid-feedback">Enter a valid email</div>
+                    </div>
+                    <div class="form-floating mt-4">
+                        <input type="tel"required placeholder="ENTER NAME" pattern="[0-9]{10}"class="form-control border-black rounded-3">
+                        <label>Phn-No</label>
+                        <div class="invalid-feedback">Enter a valid phone number</div>
+                    </div>
+                    <button class="btn btn-success w-100 mt-4 border-black rounded-5" id="btn">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>  
+    <script src="/home/a3-403a-10/Desktop/T400050836/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
